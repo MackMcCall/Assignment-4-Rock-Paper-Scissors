@@ -1,41 +1,74 @@
+<!--
+  Name: Mack McCall
+  Date: 03.03.2026
+  CSC 372-01
+
+  This is the index.html page for my rock paper scissors site. It includes 
+  the images and titles for the player and computer throws, as well as the
+  results and stats.
+-->
+
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <section class="player">
-      <div class="rpc-container">
-        <article class="rpc">
-          <img src="images/rock.PNG" alt="Rock" />
-        </article>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <section class="player">
+            <div class="rpc-container">
+                <article class="rpc">
+                    <img src="images/rock.PNG" alt="Rock" />
+                </article>
 
-        <article class="rpc">
-          <img src="images/paper.PNG" alt="Paper" />
-        </article>
+                <article class="rpc">
+                    <img src="images/paper.PNG" alt="Paper" />
+                </article>
 
-        <article class="rpc">
-          <img src="images/scissors.PNG" alt="Scissors" />
-        </article>
-      </div>
-      <h3>YOUR THROW</h3>
-    </section>
+                <article class="rpc">
+                    <img src="images/scissors.PNG" alt="Scissors" />
+                </article>
+            </div>
+            <h3>YOUR THROW</h3>
+        </section>
 
-    <section class="computer">
-      <div class="rpc-container">
-        <article class="rpc">
-          <img src="images/question-mark.PNG" alt="Question Mark" />
-        </article>
-      </div>
-      <h3>COMPUTER THROW</h3>
-    </section>
+        <section class="computer">
+            <div class="rpc-container">
+                <article class="rpc">
+                    <img
+                        id="computer-image"
+                        src="images/question-mark.PNG"
+                        alt="Question Mark"
+                    />
+                </article>
+            </div>
+            <h3>COMPUTER THROW</h3>
+        </section>
 
-    <section class="controls">
-      <h3>RESULTS:</h3>
-    </section>
-  </body>
+        <section class="outcome">
+            <h3>RESULTS:</h3>
+        </section>
+
+        <section class="stats">
+            <h3>STATS:</h3>
+            <div class="stats-container">
+                <div class="stats-card" id="wins-card">
+                    <p>Wins:&nbsp;</p>
+                    <p id="num-of-wins"></p>
+                </div>
+                <div class="stats-card" id="losses-card">
+                    <p>Losses:&nbsp;</p>
+                    <p id="num-of-losses"></p>
+                </div>
+                <div class="stats-card" id="ties-card">
+                    <p>Ties:&nbsp;</p>
+                    <p id="num-of-ties"></p>
+                </div>
+                <button id="reset-button">Reset</button>
+            </div>
+        </section>
+    </body>
 </html>
